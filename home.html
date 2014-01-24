@@ -70,7 +70,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">For IIT Aspirants<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Life in IITs</a></li>
+                    <li><a href="life in iits.html">Life in IITs</a></li>
                     <li><a href="#">Undergraduate</a></li>
                     <li><a href="#">Post-Graduate</a></li>
                     <li><a href="#">Research</a></li>
@@ -108,16 +108,16 @@
     -->
                       <!--Login Modal-->
               <div id="myModalLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog" style="width:25cm">
+      <div class="modal-dialog" >
         <div class="modal-content">
         <div id="container">
-        <div id="box-left">
 
           <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h3 class="modal-title" id="myModalLabel">Login</h3>
           </div>
           <div class="modal-body">
-            <p>If you already have an account , login below :</p>
+           
 
     <!--        <h4>Popover in a modal</h4>
             <p>This <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
@@ -135,52 +135,11 @@
   <span class="input-group-addon">Password </span>
   <input type="text" class="form-control" placeholder="Password">
 </div>
-	<p>If not signed up yet ,<button onClick="showbox('box-right')">sign up</button> now</p>
+	<p>If not signed up yet ,<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">sign up</button> now</p>
     <button type="button" class="btn btn-primary">Login</button>
           
           </div>
-          </div><!--box left-->
-                  <div id="box-right">
-
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h3 class="modal-title" id="myModalLabel">Sign Up</h3>
-          </div>
-          <div class="modal-body">
-            <p>Please enter your details below :</p>
-
-    <!--        <h4>Popover in a modal</h4>
-            <p>This <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
-
-            <h4>Tooltips in a modal</h4>
-            <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
-
-            <hr>-->
-
-            <div class="input-group">
-  <span class="input-group-addon">Username </span>
-  <input type="text" class="form-control" placeholder="Username">
-</div>
-     <div class="input-group">
-  <span class="input-group-addon">Password </span>
-  <input type="text" class="form-control" placeholder="Password">
-</div>
- <div class="input-group">
-  <span class="input-group-addon">E-mail </span>
-  <input type="text" class="form-control" placeholder="E-mail addess">
-</div>
- <div class="input-group">
-  <span class="input-group-addon">Phone no. </span>
-  <input type="text" class="form-control" placeholder="Phone number">
-</div>
-    
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save </button>
-          </div>
-
-          
-          </div>
-          </div><!--box right-->
+                 
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -188,38 +147,9 @@
 <!--End Login Modal-->
                   <!--Sign Up Modal-->
               <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog" style="width:25cm">
+      <div class="modal-dialog">
         <div class="modal-content">
         <div id="container">
-        <div id="box-left">
-
-          <div class="modal-header">
-            <h3 class="modal-title" id="myModalLabel">Login</h3>
-          </div>
-          <div class="modal-body">
-            <p>If you already have an account , login below :</p>
-
-    <!--        <h4>Popover in a modal</h4>
-            <p>This <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
-
-            <h4>Tooltips in a modal</h4>
-            <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
-
-            <hr>-->
-
-            <div class="input-group">
-  <span class="input-group-addon">Username </span>
-  <input type="text" class="form-control" placeholder="Username">
-</div>
-     <div class="input-group">
-  <span class="input-group-addon">Password </span>
-  <input type="text" class="form-control" placeholder="Password">
-</div>
-    <button type="button" class="btn btn-primary">Login</button>
-          
-          </div>
-          </div><!--box left-->
-                  <div id="box-right">
 
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -259,7 +189,6 @@
 
           
           </div>
-          </div><!--box right-->
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -432,24 +361,6 @@
 }
 .input-group{
 	margin-bottom:1cm;
-}
-
-#box-left{
-	width:11cm;
-	display:table-cell;
-	
-}
-#box-right{
-	width:14cm;
-	display:table-cell;
-	
-}
-function showbox(boxid){
-   document.getElementById(boxid).style.visibility="visible";
-}
- 
-function hidebox(boxid){
-   document.getElementById(boxid).style.visibility="hidden";
 }
 #Login{
 	float:right;
