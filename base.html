@@ -92,30 +92,34 @@
 
       </div>
     </div>
+   <!-- Nav tabs -->
+ <div id="navtab">
+<ul class="nav nav-pills">
+  <li><a href="#iitmhome" data-toggle="tab">IIT Home</a></li>
+  <li><a href="#people" data-toggle="tab">People</a></li>
+  <li><a href="#events" data-toggle="tab">Events</a></li>
+  <li><a href="#alumni" data-toggle="tab">Alumni</a></li>
+  <li><a href="#scrap" data-toggle="tab">Scrap-book</a></li>
+</ul>
+</div>
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="iitmhome" style="margin-left:11%;">
+  <img src="http://static.wixstatic.com/media/9440c3_3d1128685841519625e63140259b8279.png_srz_p_200_200_75_22_0.50_1.20_0.00_png_srz" style="margin-top:50px;float:left;margin-right:50px;" />
+  <h2 style="margin-top:30px;margin-left:30px;">Welcome to Utkala Association, IITM</h2>
+  <h4 style="margin-top:20px;margin-left:20px;">Here,  we shall write about the association, its objectives and about its activities </h5>
+  <p  style="margin-right:100px;">The Indian Institute of Technology Madras (IIT Madras) is an autonomous public engineering institution located in Chennai (formerly Madras), Tamil Nadu. It is recognized as an Institute of National Importance by the Government of India.[1][2][3] Founded in 1959 with technical and financial assistance from the government of the former West Germany, it was the third Indian Institutes of Technology that was established by the Government of India through an Act of Parliament, to provide education and research facilities in engineering and technology.[2][4]</p>  
+  </div>
+  <div class="tab-pane" id="people">Coming Soon...</div>
+  <div class="tab-pane" id="events">Coming Soon...</div>
+  <div class="tab-pane" id="alumni">Coming Soon...</div>
+  <div class="tab-pane" id="scrap">Coming Soon...</div>
+</div>
     
-    <!--side nav-->
-     <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li><a href="#">IITM Home</a>
-                </li>
-                <li><a href="#">People</a>
-                </li>
-                <li><a href="#">Events</a>
-                </li>
-                <li><a href="#">Alumni</a>
-                </li>
-                <li><a href="#">Scrap-book</a>
-                </li>
-            </ul>
-        </div>
-        <!--end side nav-->
         <!--content-->
         
          <!--end content-->
-         <!--prefooter-->
+         <!--prefooter
          <div id="prefooter">
          <div id="pf_1">
          <h4>Upcoming events</h4> 
@@ -141,10 +145,11 @@
          <p>Here,we can mention about recent events</p>
          </div>
          <hr />
-         </div>
+         <div id="pf_1">
+         <p>
+         </div>-->
 	<script src="js/jquery.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-    <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/jquery-1.10.2.js"></script>
     <script src="js/holder.js"></script>
 </body>
@@ -166,6 +171,13 @@
 {
 	margin-left:5%;
 	margin-right:5%;
+}
+#navtab{
+	margin-left:15%;
+}
+.nav-pills li{
+	width:15%;
+	text-align:center;
 }
 
 
