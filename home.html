@@ -25,21 +25,16 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper" style="width:100%" >
-      <div class="container" style="width:100%" >
+       <div class="navbar-wrapper">
+      <div class="container">
 
-        <div class="navbar navbar-default navbar-static-top" style="width:100%">
+        <div class="navbar navbar-default navbar-static-top">
           <div class="container">
           
           <a href="Home.html" class="navbar-brand">Pan-IIT Odia Community</a>
           
-          <button class ="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse navHeaderCollapse" >
-              <ul class="nav navbar-nav navbar-right">
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -83,19 +78,19 @@
                     <li><a href="#">Conference & Workshops</a></li>
                   </ul>
                 </li>
-                <li><a href="#about">Magazine</a></li>
                 <li><a href="#about">Forum</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">IITs</a></li>
-                    <li><a href="pan-iit.html">Pan-IIT</a></li>
+                    <li><a href="#">Pan-IIT</a></li>
                     <li><a href="#">Odisha</a></li>
                     <li><a href="#">Contact Us</a></li>
                   </ul>
                 </li>
                 <li><a href="#about">More</a></li>
               </ul>
+                 <a href="#login" class="navbar-brand" style="margin-left:15px;">Login</a>
             </div>
           </div>
         </div>
@@ -206,8 +201,8 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="item active">
-          <img src="Patta_Chitra_01.jpg" width="2337" height="858" align="bottom">
+        <div class="item active" id="darken">
+          <img src="Patta_Chitra_01.jpg" width="2337" height="858" align="bottom" style="background-color:#000;opacity:0.5;">
           <div class="container">
             <div class="carousel-caption">
               <h3>Welcome to the Pan IIT Association</h3>
@@ -224,7 +219,7 @@
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item" id="darken">
           <img src="homeheader.jpg" alt="Second slide" width="960" height="210" >
           <div class="container">
             <div class="carousel-caption">
@@ -249,13 +244,6 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
 
-<div id="Login">
-<div class="bs-example" style="padding-bottom: 24px;">
-      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalLogin">
-       Login
-      </button>
-		</div>
-        </div>
 
 
     <!-- Marketing messaging and featurettes
@@ -365,6 +353,9 @@
 #Login{
 	float:right;
 	height:10px;
+}
+#darken{
+	background-color:#333;
 }
 
 </style>
